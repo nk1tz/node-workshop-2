@@ -25,5 +25,3 @@ function randomIntFromInterval(min,max){
 function randomQuote(){
     return quotes[ randomIntFromInterval( 0, 10 ) ];
 }
-
-console.log(randomQuote());
