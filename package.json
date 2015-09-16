@@ -1,0 +1,25 @@
+{
+  "name": "node-workshop-2-day8",
+  "version": "0.0.1",
+  "description": "Day 8 of bootcamp",
+  "main": "cps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nk1tz/node-workshop-2.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "callbacks",
+    "CPS"
+  ],
+  "author": "Nathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nk1tz/node-workshop-2/issues"
+  },
+  "homepage": "https://github.com/nk1tz/node-workshop-2"
+}
