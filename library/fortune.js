@@ -2,7 +2,7 @@
 
 module.exports = {
   
-    getRandomQuote: randomQuote
+    getFortune: randomQuote
 
 };
 
