@@ -21,9 +21,9 @@ function getFirstAndLast(str, ret){
     var l2;
     firstChar(str, function(x){
         l1 = x;
-    });
-    lastChar(str, function(x){
-        l2 = x;
+        lastChar(str, function(y){
+            l2 = y;
+        });
     });
     ret(l1+l2);
 }
