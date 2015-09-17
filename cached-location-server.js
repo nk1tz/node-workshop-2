@@ -23,16 +23,19 @@ var requestListener = function (req, response) {
                 var location = data.results[0].geometry.location;
                 cachedCities[clientCity] = location;
                 response.writeHead(200);
-                response.end('Hello, I see you are in '+clientCity+', your coordinates are:\nlatitude: ' + cachedCities[clientCity].lat + '\nlongitude: ' + cachedCities[clientCity].lng + "\nThis response is fresh");
+                response.write('<h1>Hello</h1>');
+                response.end('\nI see you are in '+clientCity+', your coordinates are:\nlatitude: ' + cachedCities[clientCity].lat + '\nlongitude: ' + cachedCities[clientCity].lng + "\nThis response is fresh");
                 
             }
             else if(result){
                 response.writeHead(200);
-                response.end('Hello, I see you are in '+clientCity+', your coordinates are:\nlatitude: ' + cachedCities[clientCity].lat + '\nlongitude: ' + cachedCities[clientCity].lng + "\nThis is a cached response");
+                response.write('<h1>Hello</h1>');
+                response.end('\nI see you are in '+clientCity+', your coordinates are:\nlatitude: ' + cachedCities[clientCity].lat + '\nlongitude: ' + cachedCities[clientCity].lng + "\nThis is a cached response");
             }
             else {
                 response.writeHead(200);
-                response.end('Sorry! NO results');                         
+                response.write('<h1>Hello</h1>');
+                response.end('\nSorry! NO results');                         
             }
                 
         }
