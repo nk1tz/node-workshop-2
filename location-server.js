@@ -3,8 +3,7 @@ var request = require('request');
 var googleApiKey = "+CA&key=AIzaSyCqB6bDHnvEmYxcRm5qg6yso2V9Q4MbOiE";
 
 var requestListener = function (req, response) {
-    // response.writeHead(200);
-    // response.end('Enter your city at the end of the current URL'); 
+ 
     var clientCity = req.url.substring(1);
   
     request('https://maps.googleapis.com/maps/api/geocode/json?address=' + clientCity + googleApiKey, function(err, res, body) {
